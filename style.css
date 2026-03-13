@@ -1,0 +1,181 @@
+body {
+background:#e8e2d3;
+font-family: Georgia, "Times New Roman", serif;
+color:#000;
+text-align:center;
+margin:0;
+}
+
+.container {
+width:760px;
+max-width:calc(100% - 24px);
+margin:18px auto 8px auto;
+}
+
+.subtitle {
+color:#800080;
+margin:10px 0 4px 0;
+font-size:1.4rem;
+}
+
+.topics {
+color:#800080;
+font-weight:bold;
+margin:0 0 6px 0;
+line-height:1.25;
+}
+
+.divider {
+margin:4px 0;
+max-width:564px;
+width:100%;
+height:auto;
+}
+
+.marquee {
+background:#800000;
+color:#ffff00;
+padding:4px 8px;
+margin:6px auto;
+width:660px;
+max-width:100%;
+overflow:hidden;
+white-space:nowrap;
+box-sizing:border-box;
+}
+
+.marquee span {
+display:inline-block;
+padding-left:100%;
+animation:scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+0% { transform:translateX(0); }
+100% { transform:translateX(-100%); }
+}
+
+h1 {
+color:#800080;
+font-size:42px;
+margin:10px 0 8px 0;
+font-weight:normal;
+}
+
+.shop-photo {
+max-width:480px;
+width:100%;
+height:auto;
+margin:10px 0;
+}
+
+.address {
+margin:4px 0 10px 0;
+}
+
+.address p {
+margin:1px 0;
+line-height:1.15;
+}
+
+.intro {
+margin:8px auto;
+line-height:1.3;
+max-width:720px;
+}
+
+.nav-title {
+margin:10px 0 6px 0;
+}
+
+.nav {
+margin:10px auto;
+width:max-content;
+}
+
+.nav td {
+padding:5px 28px;
+vertical-align:top;
+text-align:left;
+white-space:nowrap;
+}
+
+.nav img {
+vertical-align:middle;
+margin-right:6px;
+}
+
+.nav a {
+vertical-align:middle;
+}
+
+.footer {
+text-align:right;
+margin:8px 20px 14px 20px;
+}
+
+@media (max-width: 800px) {
+.container {
+width:auto;
+max-width:calc(100% - 20px);
+margin:12px auto 6px auto;
+}
+
+.subtitle {
+font-size:1.2rem;
+}
+
+.topics {
+font-size:0.98rem;
+}
+
+h1 {
+font-size:34px;
+}
+
+.marquee {
+width:100%;
+}
+
+.nav,
+.nav tbody,
+.nav tr,
+.nav td {
+display:block;
+width:100%;
+box-sizing:border-box;
+}
+
+.nav td {
+padding:4px 0;
+}
+}
+
+@media (max-width: 480px) {
+body {
+font-size:15px;
+}
+
+h1 {
+font-size:28px;
+}
+
+.subtitle {
+font-size:1.05rem;
+}
+
+.topics {
+font-size:0.92rem;
+line-height:1.2;
+}
+
+.marquee {
+font-size:0.92rem;
+padding:4px 6px;
+}
+
+.footer {
+margin:8px 12px 12px 12px;
+font-size:0.92rem;
+}
+}
