@@ -43,8 +43,20 @@
   width: 100%;
   height: 260px;
   object-fit: cover;
+}
+
+  .crop-top {
   object-position: top;
 }
+
+.crop-center {
+  object-position: center;
+}
+
+.crop-bottom {
+  object-position: bottom;
+}
+
 
 .gallery-note {
   text-align: center;
@@ -114,32 +126,33 @@ Click any photo to view the full-size image.
 <div class="gallery">
 
 <figure>
-<a href="images/dickfamily.jpg" target="_blank">
-<img src="images/dickfamily.jpg" alt="Dick and Maria with their grandsons">
-</a>
-<figcaption>Dick and Maria with their grandchildren</figcaption>
+  <a href="images/dickfamily.jpg" target="_blank">
+    <img class="crop-top" src="images/dickfamily.jpg" alt="Dick and Maria with their grandsons">
+  </a>
+  <figcaption>Dick and Maria with their grandchildren</figcaption>
 </figure>
 
 <figure>
-<a href="images/dickresting.jpg" target="_blank">
-<img src="images/dickresting.jpg" alt="Dick resting in the garden">
-</a>
-<figcaption>Dick in the garden</figcaption>
+  <a href="images/dickresting.jpg" target="_blank">
+    <img class="crop-center" src="images/dickresting.jpg" alt="Dick resting in the garden">
+  </a>
+  <figcaption>Dick in the garden</figcaption>
 </figure>
 
 <figure>
-<a href="images/funeralprogram.jpg" target="_blank">
-<img src="images/funeralprogram.jpg" alt="Order of service from Dick's funeral">
-</a>
-<figcaption>Program for Dick's funeral</figcaption>
+  <a href="images/funeralprogram.jpg" target="_blank">
+    <img class="crop-center" src="images/funeralprogram.jpg" alt="Order of service from Dick's funeral">
+  </a>
+  <figcaption>Program for Dick's funeral</figcaption>
 </figure>
 
 <figure>
-<a href="images/dickandmaria2.jpg" target="_blank">
-<img src="images/dickandmaria2.jpg" alt="Dick and Maria in the garden">
-</a>
-<figcaption>Dick and Maria in the back garden</figcaption>
+  <a href="images/dickbackgarden.jpg" target="_blank">
+    <img class="crop-top" src="images/dickbackgarden.jpg" alt="Dick and Maria in the back garden">
+  </a>
+  <figcaption>Dick and Maria in the back garden</figcaption>
 </figure>
+
 
 </div>
 
